@@ -8,18 +8,25 @@
 ### Endpoints
 - #### tasks
 HTTP Verb: GET
+
 Devuelve todas las tareas contenidas en la Base de Datos. URL:
-http://localhost:port/api/tasks
+
+http://domain/api/tasks
 
 - #### task
 HTTP Verb: GET
+
 Devuelve los datos de una tarea concreta. URL:
-http://localhost:port/api/tasks/{id}
+
+http://domain/api/tasks/{id}
 
 - #### create
 HTTP Verb: POST
+
 Persiste un nuevo modelo Task en la BD. URL:
-http://localhost:port/api/tasks/create
+
+http://domain/api/tasks/create
+
 
 El body debe de contener los siguientes datos:
 * "name": "Requerido. Longitud máxima 191 caracteres."
@@ -28,8 +35,11 @@ El body debe de contener los siguientes datos:
 
 - #### update
 HTTP Verb: PUT
+
 Actualiza un Task en la BD. URL:
-http://localhost:port/api/tasks/{id}
+
+http://domain/api/tasks/{id}
+
 
 El body debe de contener los siguientes datos:
 * "name": "Requerido. Longitud máxima 191 caracteres."
@@ -38,5 +48,7 @@ El body debe de contener los siguientes datos:
 
 - #### delete
 HTTP Verb: DELETE
+
 Elimina un Task de la BD. URL:
-http://localhost:port/api/tasks/{id}
+
+http://domain/api/tasks/{id}
