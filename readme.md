@@ -6,21 +6,21 @@
 * MySql 5.7.25
 
 ### Endpoints
-- #### tasks
+##### tasks
 HTTP Verb: GET
 
 Devuelve todas las tareas contenidas en la Base de Datos. URL:
 
 http://domain/api/tasks
 
-- #### task
+##### task
 HTTP Verb: GET
 
 Devuelve los datos de una tarea concreta. URL:
 
 http://domain/api/tasks/{id}
 
-- #### create
+##### create
 HTTP Verb: POST
 
 Persiste un nuevo modelo Task en la BD. URL:
@@ -33,7 +33,7 @@ El body debe de contener los siguientes datos:
 * "due_date": "Requerido. Fecha con formato Y-m-d H:i:s"
 * "description": "Requerido"
 
-- #### update
+##### update
 HTTP Verb: PUT
 
 Actualiza un Task en la BD. URL:
@@ -46,7 +46,7 @@ El body debe de contener los siguientes datos:
 * "due_date": "Requerido. Fecha con formato Y-m-d H:i:s"
 * "description": "Requerido"
 
-- #### delete
+##### delete
 HTTP Verb: DELETE
 
 Elimina un Task de la BD. URL:
