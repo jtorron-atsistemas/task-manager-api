@@ -36,7 +36,7 @@ class TaskRepository implements TaskRepositoryInterface
      */
     public function all()
     {
-        return $this->model->all();
+        return $this->model->orderBy('due_date', 'DESC')->get();
     }
 
     /**
